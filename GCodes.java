@@ -14,7 +14,7 @@ import java.io.PrintWriter;
 import javax.imageio.ImageIO;
 
 /**
- * Converts a raster image to G codes for burning that image into wood
+ * Converts a raster image to G-codes for burning that image into wood
  * using the solar plotter.
  */
 public class GCodes {
