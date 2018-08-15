@@ -9,11 +9,22 @@ plot so that the position will be correct after the earth rotates.
 
     % python adjust_for_sun.py < in.g > out.g
 
+If you don't do that, circles don't even close, like the `e` in the lower-right
+of this plot:
+
+![Pioneer burn](solar_plotter_pioneer.jpg)
+
 The `GCodes.java` program converts a raster image to a G-code file to burn
 that image using a solar plotter.
 
     % javac GCodes.java
     % java GCodes bertrand-russell-high-res.jpg
+
+![Bertrand Russell](bertrand-russell-high-res.jpg)
+
+It works better on low-res images:
+
+![Bertrand Russell](bertrand-russell-low-res.jpg)
 
 See the [full write-up](https://www.teamten.com/lawrence/writings/solar_plotter.html)
 for more info about both of these.
